@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/jenkins_home/workspace/demopipelinetask/hello-world-war") {
+                dir("/var/jenkins_home/workspace/full_CI_CD_Pipeline/hello-world-war") {
 sh "mvn -Dmaven.test.failure.ignore=true clean package"                }
             }
         }
